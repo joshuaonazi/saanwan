@@ -83,16 +83,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---- Header scroll styling ---- */
+  /* ---- Header scroll direction styling ---- */
   var header = document.querySelector('.site-header');
   if (header) {
+    var lastScrollY = window.pageYOffset;
     window.addEventListener('scroll', function () {
       var currentScrollY = window.pageYOffset;
-      if (currentScrollY > 0) {
+      if (currentScrollY > 0 && currentScrollY < lastScrollY) {
         header.classList.add('site-header--scroll-up');
       } else {
         header.classList.remove('site-header--scroll-up');
       }
+      lastScrollY = currentScrollY;
     }, { passive: true });
   }
 

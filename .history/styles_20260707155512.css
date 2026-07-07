@@ -215,15 +215,11 @@ textarea:focus-visible {
 }
 
 .nav-cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   background: var(--color-ink);
   color: var(--color-white) !important;
-  padding: 16px 42px;
+  padding: 14px 36px;
   border-radius: var(--radius);
   border: 2px solid var(--color-ink);
-  margin-left: 16px;
   box-shadow: 0 12px 24px rgba(34, 31, 28, 0.08);
   transition: transform var(--transition), background var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
