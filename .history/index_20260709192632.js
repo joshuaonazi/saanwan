@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
       })
         .then(function (response) {
           if (response.ok) {
-            status.textContent = "Thanks for your message. Saanwan will be in touch soon.";
+            status.textContent = "Thanks — your message is on its way. We'll be in touch soon.";
             status.classList.add('show', 'success');
             form.reset();
           } else {
