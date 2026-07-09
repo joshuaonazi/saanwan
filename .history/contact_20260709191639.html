@@ -3,12 +3,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - SAANWAN Consulting</title>
+<title>Contact — SAANWAN Consulting</title>
 <meta name="description" content="Start a project with SAANWAN Consulting. Reach our offices in San Antonio, Las Vegas, and Nigeria.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap">
+    <a href="index.html" class="logo" aria-label="SAANWAN home">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      SAANWAN
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Start a Project</a>    
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero wrap">
+    <div class="eq-divider"><span></span><span></span><span></span><span></span><span></span></div>
+    <span class="eyebrow">Get In Touch</span>
+    <h1>Let's start the project.</h1>
+    <p>Tell us a bit about what you're working on. We'll follow up to talk scope, timeline, and the right team for it.</p>
+  </section>
+
+  <section class="section">
+    <div class="wrap contact-layout">
+
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name">
+          <span class="form-error">Please enter your name.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+          <span class="form-error">Please enter a valid email address.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service you're interested in</label>
+          <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option value="Project Management">Project Management</option>
+            <option value="Media Training">Media Training</option>
+            <option value="Sound Design">Sound Design</option>
+            <option value="Videography">Videography</option>
+            <option value="Music Production and Orchestration">Music Production &amp; Orchestration</option>
+            <option value="Audio Engineering">Audio Engineering</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+          <span class="form-error">Please select a service.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell us about your project</label>
+          <textarea id="message" name="message" placeholder="What are you working on, and what's the timeline?"></textarea>
+          <span class="form-error">Tell us a little more about your project.</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <div class="form-status" id="form-status"></div>
+      </form>
+
+      <div class="contact-info-card">
+        <h3>Reach us directly</h3>
+        <p style="margin-bottom: 28px; font-size: 0.9rem;">Prefer email or a call? Add your studio's direct contact details here once ready.</p>
+
+        <div class="contact-info-item">
+          <span class="eyebrow">San Antonio</span>
+          <p>Texas, United States</p>
+        </div>
+        <div class="contact-info-item">
+          <span class="eyebrow">Las Vegas</span>
+          <p>Nevada, United States</p>
+        </div>
+        <div class="contact-info-item">
+          <span class="eyebrow">Nigeria</span>
+          <p>International office</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="logo">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          SAANWAN
+        </a>
+        <p>A multimedia consulting company delivering creative and technical excellence across production, sound, and screen.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Sound Design</a></li>
+          <li><a href="services.html">Videography</a></li>
+          <li><a href="services.html">Music Production</a></li>
+          <li><a href="services.html">Audio Engineering</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="about.html">San Antonio, USA</a></li>
+          <li><a href="about.html">Las Vegas, USA</a></li>
+          <li><a href="about.html">Nigeria</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> SaAnwan Consulting LLC. All rights reserved.</span>
+      <span>Built & developed by Web3Cryptic.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/index.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — SAANWAN Consulting</title>
+<meta name="description" content="Start a project with SAANWAN Consulting. Reach our offices in San Antonio, Las Vegas, and Nigeria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
