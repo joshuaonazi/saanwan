@@ -520,7 +520,7 @@ textarea:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  text-align: right;
+  text-align: center;
   max-width: 620px;
 }
 .mission-block p {
